@@ -1,0 +1,12 @@
+//code to efficiently calculate the term a raised to power b for large values of a and b
+
+public static void binpow(long a,long b){
+    long res=1;
+    while(b>0){
+        if(b%2==1){
+            res*=a;
+        }
+        a*=a;
+        b>>=1;
+    }
+}
